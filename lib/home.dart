@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:clock_daily_task/global.dart';
 
-
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -13,6 +12,32 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        backgroundColor: Colors.white,
+        child: Column(
+          children: [
+            DrawerHeader(
+              child: Column(
+                children: [
+                  CircleAvatar(
+                    radius: 50,
+                    backgroundImage: AssetImage(img),
+                  ),
+                  const Text(
+                    'Priyam Tripathi',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  ),
+                ],
+              ),
+            ),
+            // drawerContain(),
+            ...List.generate(
+              drawerList.length,
+                  (index) => drawerMake(index: index),
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: const Text(
           "Actions",
@@ -161,8 +186,9 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
+            SizedBox(height: 15,),
             Container(
-              height: 140,
+              height: 170,
               width: double.infinity,
               decoration: BoxDecoration(color: Colors.white,
                   border: Border.all(color: Colors.black,width: 1),
@@ -170,36 +196,37 @@ class _HomeState extends State<Home> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 40,left: 25),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+                        FloatingActionButton.small(onPressed: (){},
+                          child: Icon(
+                            Icons.add,),),
                         FloatingActionButton(onPressed: (){},
-                          child: Icon(Icons.add,size: 20,),),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 20.0),
-                          child: FloatingActionButton(onPressed: (){},
-                            child: Icon(
-                              Icons.add,size: 20,),
-                          ),
+                          child: Icon(
+                            Icons.add,),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 20.0),
-                          child: FloatingActionButton(onPressed: (){},
-                            child: Text('Create',),
-                            ),
+                        FloatingActionButton.extended(label: Text('Create'),
+                          icon: Icon(
+                            Icons.add,
                           ),
+                          onPressed: (){},
+                        ),
+                        FloatingActionButton.large(onPressed: (){},
+                          child: Icon(
+                            Icons.add,),),
                       ],
                     ),
                   ),
-
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 170,top: 10,),
+              padding: const EdgeInsets.only(left: 148,top: 10,),
               child: Row(
                 children: [
-                  Text('Icon buttons ',
+                  Text('Icons buttons ',
                     style: TextStyle(
                       fontSize: 16,
                     ),
@@ -208,35 +235,50 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
-        Container(
-          height: 150,
-          width: double.infinity,
-          decoration: BoxDecoration(color: Colors.white,
-              border: Border.all(color: Colors.black,width: 1),
-              borderRadius: BorderRadius.circular(10)),
-           child:  Column(
-              children: [
-                Row(
-                  children: [
-                    IconButton(onPressed: (){},
-                        icon: Icon(Icons.settings)),
-                    IconButton(onPressed: (){},
-                        icon: Icon(Icons.settings_applications)),
-                    IconButton(onPressed: (){},
-                        icon: Icon(Icons.settings_applications_rounded)),
-                    IconButton(onPressed: (){},
-                        icon: Icon(Icons.settings_backup_restore)),
-                    IconButton(onPressed: (){},
-                        icon: Icon(Icons.settings_bluetooth)),
-
-
-                  ],
-
-                )
-              ],
-            )
-          ),
-
+            SizedBox(height: 18,),
+            Container(
+              height: 145,
+              width: double.infinity,
+              decoration: BoxDecoration(color: Colors.white,
+                  border: Border.all(color: Colors.black,width: 1),
+                  borderRadius: BorderRadius.circular(10)),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.settings,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  IconButton.filledTonal(
+                    style: ButtonStyle(
+                        backgroundColor:
+                        WidgetStateProperty.all(Colors.grey.shade300)),
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.settings,
+                      color: Colors.grey,),),
+                  IconButton.filled(
+                    style: ButtonStyle(
+                        backgroundColor:
+                        WidgetStateProperty.all(Colors.grey.shade300)),
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.settings,
+                      color: Colors.black38,),),
+                  IconButton.outlined(
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStateProperty.all(
+                        Colors.grey.shade300,),),
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.settings,
+                      color: Colors.grey,),),
+                ],
+              ),
+            ),
           ],
         ),
       ),
@@ -249,4 +291,16 @@ class _HomeState extends State<Home> {
       style: TextStyle(fontSize: size, color: color),
     );
   }
+}
+ListTile drawerMake({required int index}) {
+  return ListTile(
+    leading: Icon(
+      drawerList[index]['icon'],
+      color: Colors.black,
+    ),
+    title: Text(
+      drawerList[index]['name'],
+      style: TextStyle(color: Colors.black),
+    ),
+  );
 }
