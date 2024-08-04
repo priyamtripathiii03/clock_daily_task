@@ -162,7 +162,7 @@ class _HomeState extends State<Home> {
               ),
             ),
             Container(
-              height: 170,
+              height: 140,
               width: double.infinity,
               decoration: BoxDecoration(color: Colors.white,
                   border: Border.all(color: Colors.black,width: 1),
@@ -179,20 +179,64 @@ class _HomeState extends State<Home> {
                           padding: const EdgeInsets.only(left: 20.0),
                           child: FloatingActionButton(onPressed: (){},
                             child: Icon(
-                              Icons.add,size: 32,),
+                              Icons.add,size: 20,),
                           ),
                         ),
-                        FloatingActionButton(onPressed: (){},
-                          child: Icon(
-                            Icons.add,
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20.0),
+                          child: FloatingActionButton(onPressed: (){},
+                            child: Text('Create',),
+                            ),
                           ),
-                        ),
                       ],
                     ),
                   ),
+
                 ],
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.only(left: 170,top: 10,),
+              child: Row(
+                children: [
+                  Text('Icon buttons ',
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
+                  Icon(Icons.info_outline,size: 18,)
+                ],
+              ),
+            ),
+        Container(
+          height: 150,
+          width: double.infinity,
+          decoration: BoxDecoration(color: Colors.white,
+              border: Border.all(color: Colors.black,width: 1),
+              borderRadius: BorderRadius.circular(10)),
+           child:  Column(
+              children: [
+                Row(
+                  children: [
+                    IconButton(onPressed: (){},
+                        icon: Icon(Icons.settings)),
+                    IconButton(onPressed: (){},
+                        icon: Icon(Icons.settings_applications)),
+                    IconButton(onPressed: (){},
+                        icon: Icon(Icons.settings_applications_rounded)),
+                    IconButton(onPressed: (){},
+                        icon: Icon(Icons.settings_backup_restore)),
+                    IconButton(onPressed: (){},
+                        icon: Icon(Icons.settings_bluetooth)),
+
+
+                  ],
+
+                )
+              ],
+            )
+          ),
+
           ],
         ),
       ),
