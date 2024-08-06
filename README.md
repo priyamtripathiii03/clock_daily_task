@@ -29,3 +29,9 @@ The Future.delayed() constructor creates a future that completes after a specifi
 ## Recursion
 
 Recursion is a programming technique where a function calls itself to solve smaller instances of the same problem. It is useful for tasks that can be divided into similar subtasks, like traversing data structures or solving mathematical problems.
+
+# What is Timer class?
+
+## Timer Class
+
+The Timer class in Dart is used to create a timer that runs a function after a specified duration or repeatedly at specified intervals. It's useful for tasks like scheduling events or creating delays.
