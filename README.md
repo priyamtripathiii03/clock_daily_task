@@ -22,3 +22,9 @@ The Duration class in Dart represents a span of time, such as 5 seconds or 3 min
 
 Future.delayed() Constructor
 The Future.delayed() constructor creates a future that completes after a specified duration. It's useful for simulating delays in asynchronous operations.
+
+
+# What is Recursion ?
+
+-Recursion
+Recursion is a programming technique where a function calls itself to solve smaller instances of the same problem. It is useful for tasks that can be divided into similar subtasks, like traversing data structures or solving mathematical problems.
