@@ -242,46 +242,12 @@ class _HomeState extends State<Home> {
               decoration: BoxDecoration(color: Colors.white,
                   border: Border.all(color: Colors.black,width: 1),
                   borderRadius: BorderRadius.circular(10)),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.settings,
-                      color: Colors.grey,
-                    ),
-                  ),
-                  IconButton.filledTonal(
-                    style: ButtonStyle(
-                        backgroundColor:
-                        WidgetStateProperty.all(Colors.grey.shade300)),
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.settings,
-                      color: Colors.grey,),),
-                  IconButton.filled(
-                    style: ButtonStyle(
-                        backgroundColor:
-                        WidgetStateProperty.all(Colors.grey.shade300)),
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.settings,
-                      color: Colors.black38,),),
-                  IconButton.outlined(
-                    style: ButtonStyle(
-                      backgroundColor: WidgetStateProperty.all(
-                        Colors.grey.shade300,),),
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.settings,
-                      color: Colors.grey,),),
-                ],
-              ),
-            ),
-          ],
+
         ),
+  ],
       ),
+      )
+
     );
   }
   Text button(

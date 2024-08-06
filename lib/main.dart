@@ -1,3 +1,4 @@
+import 'package:clock_daily_task/clock.dart';
 import 'package:flutter/material.dart';
 import 'package:clock_daily_task/home.dart';
 import 'package:clock_daily_task/global.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: Home(),
+      home: Clock(),
     );
   }
 }
