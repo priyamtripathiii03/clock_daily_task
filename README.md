@@ -35,3 +35,9 @@ Recursion is a programming technique where a function calls itself to solve smal
 ## Timer Class
 
 The Timer class in Dart is used to create a timer that runs a function after a specified duration or repeatedly at specified intervals. It's useful for tasks like scheduling events or creating delays.
+
+# What is Timer.periodic and use with Example?
+
+## Timer.periodic
+
+The Timer.periodic constructor in Dart creates a timer that repeatedly runs a function at specified intervals. It's useful for executing a task at regular intervals, like updating a UI or polling for data.
