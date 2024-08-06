@@ -40,13 +40,14 @@ class _ClockState extends State<Clock> {
                 Text(
                     '${(dateTime.hour%12).toString().padLeft(2,'0')} : ${(dateTime.minute).toString().padLeft(2,'0')}',style: TextStyle(fontSize: 60,color: Colors.white,fontWeight: FontWeight.bold),),
                SizedBox(width: 10,),
-                Text('${dateTime.second.toString().padLeft(2,'0')} : ${(dateTime.hour>=12)?'PM':'AM'}',style: (TextStyle(color: Colors.white,height: -2,fontWeight: FontWeight.bold,fontSize: 22)),),
+                Text('${dateTime.second.toString().padLeft(2,'0')} : ${(dateTime.hour>=12)?'PM':'AM'}',style: (TextStyle(color: Colors.white,height: -2,fontWeight: FontWeight.bold,fontSize: 18)),),
               ],
             ),
+            SizedBox(height: 20,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('${days[dateTime.weekday-1]} ${dateTime.day} ${months[dateTime.month-1]}',style: TextStyle(color: Colors.white,fontSize: 22),)
+                Text('${days[dateTime.weekday-1]} ${dateTime.day} ${months[dateTime.month-1]}',style: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.bold),)
               ],
             ),
             Spacer(flex: 4,),
