@@ -18,3 +18,7 @@
 # What is Duration class & Future.delayed() constructor with Example ?
 ## Duration Class
 
+The Duration class in Dart represents a span of time, such as 5 seconds or 3 minutes. It is commonly used to specify time intervals.
+
+Future.delayed() Constructor
+The Future.delayed() constructor creates a future that completes after a specified duration. It's useful for simulating delays in asynchronous operations.
