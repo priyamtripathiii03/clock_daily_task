@@ -51,6 +51,13 @@ class _ClockState extends State<Clock> {
               ],
             ),
             Spacer(flex: 4,),
+            OutlinedButton(style: ButtonStyle(
+              side:WidgetStateProperty.all
+                (BorderSide(color: Colors.grey,width: 2),),),onPressed: () {
+              Navigator.of(context).pushNamed('/analog');
+            }, child:Text('Next',style: TextStyle(fontSize: 30,color: Colors.black54,fontWeight: FontWeight.w600
+              ,),)),
+            Spacer(),
           ],
         ),
       ),
