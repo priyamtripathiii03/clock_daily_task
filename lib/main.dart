@@ -1,7 +1,9 @@
-import 'package:clock_daily_task/clock.dart';
 import 'package:flutter/material.dart';
 import 'package:clock_daily_task/home.dart';
 import 'package:clock_daily_task/global.dart';
+import 'package:clock_daily_task/analog_clock.dart';
+import 'package:clock_daily_task/clock.dart';
+
 
 void main()
 {
@@ -13,10 +15,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-
+      routes: {
+        '/':(context)=>Clock(),
+        '/analog':(context)=>AnalogClock(),
+      },
     );
   }
 }
