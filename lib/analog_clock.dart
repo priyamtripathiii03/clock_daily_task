@@ -38,35 +38,50 @@ class _AnalogClockState extends State<AnalogClock> {
           alignment: Alignment.center,
           children: [
             Container(
-              height: 350,
-              width: 350,
+              height: 300,
+              width: 310,
               decoration: BoxDecoration(
+                color: Colors.black,
                 shape: BoxShape.circle,
-                color: Colors.blueGrey,
-                border: Border.all(color: Colors.white, width: 5),
+                border: Border.all(color: Colors.orange, width: 5,),
               ),
               child: Stack(
                 alignment: Alignment.center,
                 children: [
+                  Transform.scale(scale:2,
+                    child: Container(
+                      height: 140,
+                      width: 140,
+
+                      child: CircularProgressIndicator(
+                        strokeAlign: 1.5,
+                        color: Colors.white,
+                        value: dateTime.second/60,
+                      ),
+                    ),
+                  ),
+                  ...List.generate(
+                    60,
+                        (index) => Transform.rotate(
+                      angle: (index * 6) * pi / 180,
+                      child: VerticalDivider(
+                        color: (index%5==0)?Colors.green:Colors.yellow,
+                        thickness:(index%5==0)?4:2,
+                        endIndent:(index%5==0)? 265:280,
+                        indent:0.5,
+                      ),
+                    ),
+                  ),
                   CircleAvatar(
                     radius: 10,
                     backgroundColor: Colors.white,
                   ),
                   Transform.rotate(
-                    angle: (dateTime.second * 6) * pi / 180,
-                    child: VerticalDivider(
-                      color: Colors.red,
-                      thickness: 4,
-                      indent: 35,
-                      endIndent: 98,
-                    ),
-                  ),
-                  Transform.rotate(
                     angle: (dateTime.minute * 6) * pi / 180,
                     child: VerticalDivider(
                       color: Colors.white,
-                      thickness: 6,
-                      indent: 40,
+                      thickness: 5,
+                      indent: 43,
                       endIndent: 140,
                     ),
                   ),
@@ -75,8 +90,17 @@ class _AnalogClockState extends State<AnalogClock> {
                     child: VerticalDivider(
                       color: Colors.white,
                       thickness: 9,
-                      indent: 70,
+                      indent: 80,
                       endIndent: 140,
+                    ),
+                  ),
+                  Transform.rotate(
+                    angle: (dateTime.second * 6) * pi / 180,
+                    child: VerticalDivider(
+                      color: Colors.red,
+                      thickness: 3,
+                      indent: 35,
+                      endIndent: 98,
                     ),
                   ),
                 ],
