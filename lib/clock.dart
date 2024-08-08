@@ -27,7 +27,7 @@ class _ClockState extends State<Clock> {
         decoration: BoxDecoration(
             image: DecorationImage(
               fit: BoxFit.cover,
-                image: AssetImage('assets/img/night.jpeg'),
+                image: AssetImage(bacImage()),
             ),
         ),
         child: Column(
@@ -38,7 +38,7 @@ class _ClockState extends State<Clock> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Text(
-                    '${(dateTime.hour%12).toString().padLeft(2,'0')} : ${(dateTime.minute).toString().padLeft(2,'0')}',style: TextStyle(fontSize: 60,color: Colors.white,fontWeight: FontWeight.bold),),
+                    '${(dateTime.hour%12==0)?12:(dateTime.hour).toString().padLeft(2,'0')} : ${(dateTime.minute).toString().padLeft(2,'0')}',style: TextStyle(fontSize: 60,color: Colors.white,fontWeight: FontWeight.bold),),
                SizedBox(width: 10,),
                 Text('${dateTime.second.toString().padLeft(2,'0')} : ${(dateTime.hour>=12)?'PM':'AM'}',style: (TextStyle(color: Colors.white,height: -2,fontWeight: FontWeight.bold,fontSize: 18)),),
               ],

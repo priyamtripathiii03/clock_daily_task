@@ -69,3 +69,38 @@ List months =[
   'November',
   'December',
 ];
+bacImage()
+{
+  if(dateTime.hour>=6 && dateTime.hour<9)
+  {
+    return background[0];
+  }
+  else if(dateTime.hour>=9 && dateTime.hour<12)
+  {
+    return background[1];
+  }
+  else if(dateTime.hour>=12 && dateTime.hour<16)
+  {
+    return background[2];
+  }
+  else if(dateTime.hour>=16 && dateTime.hour<19)
+  {
+    return background[3];
+  }
+  else if(dateTime.hour>=19 && dateTime.hour<24)
+  {
+    return background[4];
+  }
+  else if(dateTime.hour>=0 && dateTime.hour<6)
+  {
+    return background[5];
+  }
+}
+List background = [
+  'assets/img/1.jpg',
+  'assets/img/2.jpg',
+  'assets/img/3.jpg',
+  'assets/img/4.jpg',
+  'assets/img/5.jpg',
+  'assets/img/6.jpeg'
+];
