@@ -66,7 +66,7 @@ class _StrapWatchState extends State<StrapWatch> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.only(left: 10,right: 10,bottom: 30),
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -79,7 +79,8 @@ class _StrapWatchState extends State<StrapWatch> {
                           child: const Text(
                             'Start',
                             style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
                                 color: Colors.white),),
                         ),
                         ElevatedButton(style: ButtonStyle(backgroundColor: WidgetStateProperty.all(Colors.white24)),
@@ -90,7 +91,9 @@ class _StrapWatchState extends State<StrapWatch> {
                           },
                           child: const Text(
                             'Pause',
-                            style: TextStyle(fontSize: 20, color: Colors.white),
+                            style: TextStyle(fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ),
                         ElevatedButton(style: ButtonStyle(
@@ -105,7 +108,9 @@ class _StrapWatchState extends State<StrapWatch> {
                           },
                           child: const Text(
                             'Reset',
-                            style: TextStyle(fontSize: 20, color: Colors.white),
+                            style: TextStyle(fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ),
                       ]),
