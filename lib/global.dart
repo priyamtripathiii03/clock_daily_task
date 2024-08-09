@@ -104,3 +104,8 @@ List background = [
   'assets/img/5.jpg',
   'assets/img/6.jpeg'
 ];
+var second=0;
+var minute=0;
+var hour=0;
+bool stop=false;
+

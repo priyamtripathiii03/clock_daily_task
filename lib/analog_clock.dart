@@ -105,13 +105,23 @@ class _AnalogClockState extends State<AnalogClock> {
                       endIndent: 98,
                     ),
                   ),
+
+                    Align(alignment: Alignment.bottomCenter,
+                      child: OutlinedButton(style: ButtonStyle(side:WidgetStateProperty.all(BorderSide(color: Colors.grey,width: 2))),onPressed: () {
+                        Navigator.of(context).pushNamed('/strap');
+                      }, child:Text('Next',style: TextStyle(fontSize: 24,color: Colors.white,fontWeight: FontWeight.w600
+                        ,),)),
+                    ),
                 ],
               ),
+
             ),
           ],
-
         ),
+
+
       ),
+
     );
   }
 }

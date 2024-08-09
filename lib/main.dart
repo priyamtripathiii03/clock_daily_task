@@ -1,3 +1,4 @@
+import 'package:clock_daily_task/strap_clock.dart';
 import 'package:flutter/material.dart';
 import 'package:clock_daily_task/home.dart';
 import 'package:clock_daily_task/global.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/':(context)=>Clock(),
         '/analog':(context)=>AnalogClock(),
+        '/strap':(context)=>StrapWatch(),
       },
     );
   }

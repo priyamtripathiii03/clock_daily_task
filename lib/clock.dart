@@ -58,7 +58,7 @@ class _ClockState extends State<Clock> {
                 Text('${days[dateTime.weekday-1]} ${dateTime.day} ${months[dateTime.month-1]}',style: TextStyle(
                     color: Colors.white,
                     fontSize: 22,
-                    fontWeight: FontWeight.bold),)
+                    fontWeight: FontWeight.bold),),
               ],
             ),
             Spacer(flex: 4,),
