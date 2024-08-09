@@ -29,8 +29,10 @@ class _AnalogClockState extends State<AnalogClock> {
         height: double.infinity,
         width: double.infinity,
         decoration: BoxDecoration(
+          color: Colors.black,
           image: DecorationImage(
             fit: BoxFit.cover,
+            opacity: 0.7,
             image: AssetImage(bacImage()),
           ),
         ),
@@ -43,7 +45,7 @@ class _AnalogClockState extends State<AnalogClock> {
               decoration: BoxDecoration(
                 color: Colors.black,
                 shape: BoxShape.circle,
-                border: Border.all(color: Colors.orange, width: 5,),
+                border: Border.all(color: Colors.white, width: 5,),
               ),
               child: Stack(
                 alignment: Alignment.center,
@@ -55,7 +57,7 @@ class _AnalogClockState extends State<AnalogClock> {
 
                       child: CircularProgressIndicator(
                         strokeAlign: 1.5,
-                        color: Colors.white,
+                        color: Colors.orange,
                         value: dateTime.second/60,
                       ),
                     ),
@@ -65,7 +67,7 @@ class _AnalogClockState extends State<AnalogClock> {
                         (index) => Transform.rotate(
                       angle: (index * 6) * pi / 180,
                       child: VerticalDivider(
-                        color: (index%5==0)?Colors.green:Colors.yellow,
+                        color: (index%5==0)?Colors.white:Colors.white,
                         thickness:(index%5==0)?4:2,
                         endIndent:(index%5==0)? 265:280,
                         indent:0.5,
@@ -81,7 +83,7 @@ class _AnalogClockState extends State<AnalogClock> {
                     child: VerticalDivider(
                       color: Colors.white,
                       thickness: 5,
-                      indent: 43,
+                      indent: 36,
                       endIndent: 140,
                     ),
                   ),
