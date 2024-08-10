@@ -1,17 +1,20 @@
-# Button Image & Drawer,Clock 
+# Button Image & Drawer
 <p>
   <img src="https://github.com/user-attachments/assets/c23c1851-2332-4a5a-8948-a08185e4a37c"height="35%" width="22%">
    <img src="https://github.com/user-attachments/assets/54d66332-25dc-4def-80ed-ca5c93e555f4"height="35%" width="22%">
-  <img src="https://github.com/user-attachments/assets/89557af5-8faf-4aaf-880c-1b694e1726bb"height="35%" width="22%">
+</p>
+
+# Digital clock 
+<p>
+   <img src="https://github.com/user-attachments/assets/89557af5-8faf-4aaf-880c-1b694e1726bb"height="35%" width="22%">
    <img src="https://github.com/user-attachments/assets/8fa09e4f-efab-44f0-af9a-e3f8ff39826d"height="35%" width="22%">
   <img src="https://github.com/user-attachments/assets/9bb30768-1386-4e0c-9f9b-419038591e7a"height="35%" width="22%">
    <img src="https://github.com/user-attachments/assets/a0ba2da5-aaf4-4d8f-9ce4-2130000d3728"height="35%" width="22%">
    <img src="https://github.com/user-attachments/assets/446460ab-e141-4b33-8af3-a1f02d2c42d3"height="35%" width="22%">
-  
 </p>
 
 
-# Analog Clock
+# Analog Clock Image
 <p>
   <img src="https://github.com/user-attachments/assets/dc8a5e95-7bc1-4a9b-8dea-ecf72a31857b"height="35%" width="22%">
    <img src="https://github.com/user-attachments/assets/11db1140-9c93-42e0-be10-67ead79b5584"height="35%" width="22%">
@@ -21,10 +24,23 @@
      
 </p>
 
-# Strap Clock 
+## What is Analog clock ?
+
+- An analog clock is a classic timekeeping device characterized by a circular face with numbers or markers around its edge, typically representing the hours from 1 to 12. The clock face is the focal point, with hands rotating around a central point to indicate time.
+- The hour hand is shorter and moves slowly around the clock, completing one full rotation every 12 hours. The minute hand is longer and moves more quickly, completing one rotation every 60 minutes. Some clocks also have a second hand, a thin, delicate hand that moves 
+  in a continuous or ticking motion, completing a full circle every 60 seconds.
+- The clock is encased in a protective frame, which can be made from various materials like wood, metal, or plastic, depending on the style. The design of analog clocks can range from simple and functional to ornate and decorative, making them both a practical tool and a piece of art or decoration.
+
+Analog clocks are found in various settings, including homes, offices, schools, and public spaces, offering a timeless way to tell time with both elegance and simplicity.
+
+# Strap Clock Image
 <p>
    <img src="https://github.com/user-attachments/assets/fd252760-45d2-43d1-8f46-c6566bef0c8a"height="35%" width="22%">
 </p>
+
+## What is Strap clock ?
+
+- A strap clock is both a functional and fashionable accessory, blending practicality with personal style. It is available in various designs, from sporty and durable models suited for outdoor activities to elegant and luxurious options made with precious metals and gemstones. Whether digital or analog, the wristwatch remains a timeless accessory, reflecting both the wearer's taste and technological advances in timekeeping.
  
 # What is  Asynchronous Programming?
 
