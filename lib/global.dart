@@ -109,3 +109,13 @@ var minute=0;
 var hour=0;
 bool stop=false;
 
+var timersecond=0;
+var timerminute=0;
+var timerhour=0;
+bool timerstop=false;
+
+TextEditingController ctrhour = TextEditingController();
+TextEditingController ctrminute = TextEditingController();
+TextEditingController ctrsecond = TextEditingController();
+
+
