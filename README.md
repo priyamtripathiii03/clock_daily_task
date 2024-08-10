@@ -4,13 +4,18 @@
    <img src="https://github.com/user-attachments/assets/54d66332-25dc-4def-80ed-ca5c93e555f4"height="35%" width="22%">
 </p>
 
+# Clock App Splash Screen
+<p>
+    <img src="https://github.com/user-attachments/assets/b0b0f0c2-21af-47db-90d2-4eef1de2be9e"height="35%" width="22%">
+</p>
+
 # Digital clock 
 <p>
    <img src="https://github.com/user-attachments/assets/89557af5-8faf-4aaf-880c-1b694e1726bb"height="35%" width="22%">
    <img src="https://github.com/user-attachments/assets/8fa09e4f-efab-44f0-af9a-e3f8ff39826d"height="35%" width="22%">
-  <img src="https://github.com/user-attachments/assets/9bb30768-1386-4e0c-9f9b-419038591e7a"height="35%" width="22%">
-   <img src="https://github.com/user-attachments/assets/8a7fd71d-c66a-477d-8020-98152e927f2d"height="35%" width="22%">
-   <img src="https://github.com/user-attachments/assets/a0ba2da5-aaf4-4d8f-9ce4-2130000d3728"height="35%" width="22%">
+  <img src="https://github.com/user-attachments/assets/1bd31aba-eb77-4c74-9212-b8b7fa0a3fc7"height="35%" width="22%">
+   <img src="https://github.com/user-attachments/assets/a373bd9d-3e8f-4c63-ae5a-7005ca2ae089"height="35%" width="22%">
+   <img src="https://github.com/user-attachments/assets/26a29619-d43f-401d-936b-0d5b5fa6f3f8"height="35%" width="22%">
    <img src="https://github.com/user-attachments/assets/446460ab-e141-4b33-8af3-a1f02d2c42d3"height="35%" width="22%">
 </p>
 
