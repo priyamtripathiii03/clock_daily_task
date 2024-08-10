@@ -22,12 +22,12 @@
 
 # Analog Clock Image
 <p>
-  <img src="https://github.com/user-attachments/assets/dc8a5e95-7bc1-4a9b-8dea-ecf72a31857b"height="35%" width="22%">
-   <img src="https://github.com/user-attachments/assets/11db1140-9c93-42e0-be10-67ead79b5584"height="35%" width="22%">
-   <img src="https://github.com/user-attachments/assets/2b41da9e-894f-44db-b723-b8552a755e5c"height="35%" width="22%">
-   <img src="https://github.com/user-attachments/assets/e03e75cc-6945-4614-9f36-211cba2bcd83"height="35%" width="22%">
-   <img src="https://github.com/user-attachments/assets/c9d3a9f7-7c8a-4ffc-afc1-c126d481c237"height="35%" width="22%">
-   <img src="https://github.com/user-attachments/assets/b70234f1-36ec-4252-80c4-ac446bfa0d54"height="35%" width="22%">
+  <img src="https://github.com/user-attachments/assets/b8821c78-c06c-4990-8790-5ab950da5900"height="35%" width="22%">
+   <img src="https://github.com/user-attachments/assets/2d44ae16-3467-4291-a82b-e0f997640f1c"height="35%" width="22%">
+   <img src="https://github.com/user-attachments/assets/2b41da9e-894f-44db-b723-b8552a755e5"height="35%" width="22%">
+   <img src="https://github.com/user-attachments/assets/19a8482d-3301-4984-b0d4-c1ff73c42d00"height="35%" width="22%">
+   <img src="https://github.com/user-attachments/assets/b882d98e-4590-4fe9-bc9f-c0863a3716fb"height="35%" width="22%">
+   <img src="https://github.com/user-attachments/assets/7a3892cd-4b2a-4e50-a08b-2d6a9bdcee01"height="35%" width="22%">
      
 </p>
 
