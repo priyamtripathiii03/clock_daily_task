@@ -4,6 +4,7 @@ import 'package:clock_daily_task/home.dart';
 import 'package:clock_daily_task/global.dart';
 import 'package:clock_daily_task/analog_clock.dart';
 import 'package:clock_daily_task/clock.dart';
+import 'package:clock_daily_task/timer_clock.dart';
 
 
 void main()
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         '/':(context)=>Clock(),
         '/analog':(context)=>AnalogClock(),
         '/strap':(context)=>StrapWatch(),
+        '/timer':(context)=>TimerClock(),
       },
     );
   }

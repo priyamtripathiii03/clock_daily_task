@@ -92,7 +92,7 @@ class _AnalogClockState extends State<AnalogClock> {
                     child: VerticalDivider(
                       color: Colors.white,
                       thickness: 9,
-                      indent: 80,
+                      indent: 70,
                       endIndent: 140,
                     ),
                   ),
@@ -101,20 +101,27 @@ class _AnalogClockState extends State<AnalogClock> {
                     child: VerticalDivider(
                       color: Colors.red,
                       thickness: 3,
-                      indent: 35,
+                      indent: 30,
                       endIndent: 98,
                     ),
                   ),
 
-                    Align(alignment: Alignment.bottomCenter,
-                      child: OutlinedButton(style: ButtonStyle(side:WidgetStateProperty.all(BorderSide(color: Colors.grey,width: 2))),onPressed: () {
-                        Navigator.of(context).pushNamed('/strap');
-                      }, child:Text('Next',style: TextStyle(fontSize: 24,color: Colors.white,fontWeight: FontWeight.w600
-                        ,),)),
-                    ),
                 ],
               ),
-
+            ),
+            Align(alignment: Alignment.bottomCenter,
+              child: OutlinedButton(
+                  style: ButtonStyle(
+                    side:WidgetStateProperty.all(
+                      BorderSide(
+                          color: Colors.grey,width: 2),),),onPressed: () {
+                Navigator.of(context).pushNamed('/strap');
+              }, child:Text('Next',
+                style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600
+                  ,),)),
             ),
           ],
         ),

@@ -40,7 +40,7 @@ class _ClockState extends State<Clock> {
               children: [
                 Text(
                     '${(dateTime.hour%12==0)?12:(dateTime.hour).toString().padLeft(2,'0')} : ${(dateTime.minute).toString().padLeft(2,'0')}',style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 80,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),),
                SizedBox(width: 10,),
@@ -48,7 +48,7 @@ class _ClockState extends State<Clock> {
                     color: Colors.white,
                     height: -2,
                     fontWeight: FontWeight.bold,
-                    fontSize: 18)),),
+                    fontSize: 28)),),
               ],
             ),
             SizedBox(height: 20,),
@@ -79,7 +79,9 @@ class _ClockState extends State<Clock> {
             ),
             Spacer(),
           ],
+
         ),
+
       ),
     );
   }

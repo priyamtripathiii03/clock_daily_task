@@ -47,7 +47,8 @@ class _StrapWatchState extends State<StrapWatch> {
           width: double.infinity,
           decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/img/6.jpeg'), fit: BoxFit.cover),
+                fit: BoxFit.cover,
+                image: AssetImage('assets/img/6.jpeg'), ),
           ),
           alignment: Alignment.center,
           child: Stack(
@@ -66,7 +67,7 @@ class _StrapWatchState extends State<StrapWatch> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 10,right: 10,bottom: 30),
+                  padding: const EdgeInsets.only(left: 10,right: 10,bottom: 100),
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -113,11 +114,29 @@ class _StrapWatchState extends State<StrapWatch> {
                                 color: Colors.white),
                           ),
                         ),
-                      ]),
+                      ],
+                  ),
                 ),
+                   Align(alignment: Alignment.bottomCenter,
+                      child: OutlinedButton(
+                       style: ButtonStyle(
+                        side:WidgetStateProperty.all(
+                         BorderSide(
+                          color: Colors.grey,width: 2),),),
+                                onPressed: () {
+                                 Navigator.of(context).pushNamed('/timer');
+                                 }, child:Text('Next',
+                                       style: TextStyle(
+                                       fontSize: 24,
+                                       color: Colors.white,
+                                         fontWeight: FontWeight.w600,),),
+                      ),
+                   ),
               ],
-            )
-          ])),
+            ),
+          ],
+          ),
+      ),
     );
   }
 }
