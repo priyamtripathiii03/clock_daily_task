@@ -10,7 +10,7 @@ class TimerClock extends StatefulWidget {
 }
 
 class _TimerClockState extends State<TimerClock> {
-  void timerlogic() {
+  void timerAppLogic() {
     Timer.periodic(
       Duration(seconds: 1),
           (timer) {
@@ -35,7 +35,7 @@ class _TimerClockState extends State<TimerClock> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    timerlogic();
+    timerAppLogic();
   }
   @override
   Widget build(BuildContext context) {
