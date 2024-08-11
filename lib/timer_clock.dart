@@ -17,10 +17,10 @@ class _TimerClockState extends State<TimerClock> {
         setState(() {
           if (timerstop) {
             timersecond--;
-            if (timersecond > 0) {
+            if (timersecond < 0) {
               timerminute--;
               timersecond = 59;
-              if (timerminute > 0) {
+              if (timerminute < 0) {
                 timerhour--;
                 timerminute = 59;
                 timersecond = 59;
@@ -35,6 +35,7 @@ class _TimerClockState extends State<TimerClock> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    timerlogic();
   }
   @override
   Widget build(BuildContext context) {
@@ -53,7 +54,7 @@ class _TimerClockState extends State<TimerClock> {
               alignment: Alignment.center,
               children: [
               Text(
-              "${hour.toString().padLeft(2,'0')}:${minute.toString().padLeft(2,'0')}:${second.toString().padLeft(2,'0')}",
+                "${hour.toString().padLeft(2, '0')}:${minute.toString().padLeft(2, '0')}:${second.toString().padLeft(2, '0')}",
                 style: const TextStyle(
                 color: Colors.white,
                  fontSize: 80,
@@ -122,7 +123,6 @@ class _TimerClockState extends State<TimerClock> {
                                 color: Colors.white,
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
-
                               ),
                               hintText: 'Enter',
                               hintStyle: TextStyle(
@@ -155,7 +155,7 @@ class _TimerClockState extends State<TimerClock> {
                             style: ButtonStyle(
                               backgroundColor: WidgetStateProperty.all(Colors.white),),
                               onPressed: (){
-                              timerstop=false;
+                              timerstop = false;
                           }, child: Text(
                             'Pause',
                             style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
@@ -164,7 +164,7 @@ class _TimerClockState extends State<TimerClock> {
                             style: ButtonStyle(
                               backgroundColor: WidgetStateProperty.all(Colors.white),),
                             onPressed: (){
-                              timerstop=false;
+                              timerstop = false;
                               timersecond=0;
                               timerminute=0;
                               timerhour=0;
