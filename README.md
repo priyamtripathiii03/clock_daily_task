@@ -45,6 +45,11 @@ Analog clocks are found in various settings, including homes, offices, schools, 
    <img src="https://github.com/user-attachments/assets/fd252760-45d2-43d1-8f46-c6566bef0c8a"height="35%" width="22%">
 </p>
 
+# Timer Image
+<p>
+   <img src="https://github.com/user-attachments/assets/489925f1-62fe-40bc-807b-391833b2c4d7"height="35%" width="22%">
+</p>
+
 ## What is Strap clock ?
 
 - A strap clock is both a functional and fashionable accessory, blending practicality with personal style. It is available in various designs, from sporty and durable models suited for outdoor activities to elegant and luxurious options made with precious metals and gemstones. Whether digital or analog, the wristwatch remains a timeless accessory, reflecting both the wearer's taste and technological advances in timekeeping.
