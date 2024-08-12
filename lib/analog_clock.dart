@@ -36,6 +36,7 @@ class _AnalogClockState extends State<AnalogClock> {
             image: AssetImage(bacImage()),
           ),
         ),
+
         child: Stack(
           alignment: Alignment.center,
           children: [
@@ -108,20 +109,48 @@ class _AnalogClockState extends State<AnalogClock> {
 
                 ],
               ),
+
             ),
-            Align(alignment: Alignment.bottomCenter,
-              child: OutlinedButton(
-                  style: ButtonStyle(
-                    side:WidgetStateProperty.all(
-                      BorderSide(
-                          color: Colors.grey,width: 2),),),onPressed: () {
-                Navigator.of(context).pushNamed('/strap');
-              }, child:Text('Next',
-                style: TextStyle(
-                  fontSize: 24,
+            Padding(
+              padding: const EdgeInsets.only(top: 400),
+              child: Text('${days[dateTime.weekday-1]} ${dateTime.day} ${months[dateTime.month-1]}',style: TextStyle(
                   color: Colors.white,
-                  fontWeight: FontWeight.w600
-                  ,),)),
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold),),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 550),
+              child: Text(
+                '${(dateTime.hour>12) ? (dateTime.hour%12).toString().padLeft(2,'0') : (dateTime.hour).toString().padLeft(2,'0')} : ${(dateTime.minute).toString().padLeft(2,'0')}',style: TextStyle(
+                  fontSize: 80,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.only(top: 550,left: 320),
+              child: Text('${dateTime.second.toString().padLeft(2,'0')} : ${(dateTime.hour>=12)?'PM':'AM'}',style: (TextStyle(
+                  color: Colors.white,
+                  height: -2,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20)),),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 70),
+              child: Align(alignment: Alignment.bottomCenter,
+                child: OutlinedButton(
+                    style: ButtonStyle(
+                      side:WidgetStateProperty.all(
+                        BorderSide(
+                            color: Colors.white,width: 3),),),onPressed: () {
+                  Navigator.of(context).pushNamed('/strap');
+                }, child:Text('Next',
+                  style: TextStyle(
+                    fontSize: 24,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600
+                    ,),),),
+              ),
             ),
           ],
         ),

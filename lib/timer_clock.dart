@@ -17,13 +17,13 @@ class _TimerClockState extends State<TimerClock> {
         setState(() {
           if (timerstop) {
             timersecond--;
-            if (timersecond > 59) {
+            if (timersecond > 0) {
               timerminute--;
-              timersecond = 0;
-              if (timerminute > 59) {
+              timersecond = 59;
+              if (timerminute > 0) {
                 timerhour--;
-                timerminute = 0;
-                timersecond = 0;
+                timerminute = 59;
+                timersecond = 5901;
               }
             }
           }
@@ -159,7 +159,19 @@ class _TimerClockState extends State<TimerClock> {
                           }, child: Text(
                             'Pause',
                             style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
-                          ))
+                          ),),
+                          ElevatedButton(
+                            style: ButtonStyle(
+                              backgroundColor: WidgetStateProperty.all(Colors.white),),
+                            onPressed: (){
+                              timerstop=false;
+                              timersecond=0;
+                              timerminute=0;
+                              timerhour=0;
+                            }, child: Text(
+                            'Reset',
+                            style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
+                          ),),
                         ],
                       ),
                     )

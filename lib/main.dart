@@ -1,3 +1,4 @@
+import 'package:clock_daily_task/splash_screen.dart';
 import 'package:clock_daily_task/strap_clock.dart';
 import 'package:flutter/material.dart';
 import 'package:clock_daily_task/home.dart';
@@ -5,6 +6,7 @@ import 'package:clock_daily_task/global.dart';
 import 'package:clock_daily_task/analog_clock.dart';
 import 'package:clock_daily_task/clock.dart';
 import 'package:clock_daily_task/timer_clock.dart';
+import 'package:clock_daily_task/splash_screen.dart';
 
 
 void main()
@@ -21,7 +23,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       routes: {
-        '/':(context)=>Clock(),
+        '/':(context)=>SplashScreen(),
+        '/clock':(context)=>Clock(),
         '/analog':(context)=>AnalogClock(),
         '/strap':(context)=>StrapWatch(),
         '/timer':(context)=>TimerClock(),

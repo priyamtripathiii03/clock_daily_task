@@ -117,20 +117,23 @@ class _StrapWatchState extends State<StrapWatch> {
                       ],
                   ),
                 ),
-                   Align(alignment: Alignment.bottomCenter,
-                      child: OutlinedButton(
-                       style: ButtonStyle(
-                        side:WidgetStateProperty.all(
-                         BorderSide(
-                          color: Colors.grey,width: 2),),),
-                                onPressed: () {
-                                 Navigator.of(context).pushNamed('/timer');
-                                 }, child:Text('Next',
-                                       style: TextStyle(
-                                       fontSize: 24,
-                                       color: Colors.white,
-                                         fontWeight: FontWeight.w600,),),
-                      ),
+                   Padding(
+                     padding: const EdgeInsets.only(bottom: 110),
+                     child: Align(alignment: Alignment.bottomCenter,
+                        child: OutlinedButton(
+                         style: ButtonStyle(
+                          side:WidgetStateProperty.all(
+                           BorderSide(
+                            color: Colors.white,width: 3),),),
+                                  onPressed: () {
+                                   Navigator.of(context).pushNamed('/timer');
+                                   }, child:Text('Next',
+                                         style: TextStyle(
+                                         fontSize: 24,
+                                         color: Colors.white,
+                                           fontWeight: FontWeight.w600,),),
+                        ),
+                     ),
                    ),
               ],
             ),

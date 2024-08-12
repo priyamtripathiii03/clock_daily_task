@@ -39,7 +39,7 @@ class _ClockState extends State<Clock> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Text(
-                    '${(dateTime.hour%12==0)?12:(dateTime.hour).toString().padLeft(2,'0')} : ${(dateTime.minute).toString().padLeft(2,'0')}',style: TextStyle(
+                    '${(dateTime.hour>12) ? (dateTime.hour%12).toString().padLeft(2,'0') : (dateTime.hour).toString().padLeft(2,'0')} : ${(dateTime.minute).toString().padLeft(2,'0')}',style: TextStyle(
                     fontSize: 80,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),),
