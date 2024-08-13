@@ -15,15 +15,17 @@ class _TimerClockState extends State<TimerClock> {
       Duration(seconds: 1),
           (timer) {
         setState(() {
-          if (timerstop) {
-            timersecond--;
-            if (timersecond < 0) {
-              timerminute--;
-              timersecond = 59;
-              if (timerminute < 0) {
-                timerhour--;
-                timerminute = 59;
+          if (timersecond != 0 || timerminute != 0 || timerhour != 0) {
+            if (timerstop) {
+              timersecond--;
+              if (timersecond < 0) {
+                timerminute--;
                 timersecond = 59;
+                if (timerminute < 0) {
+                  timerhour--;
+                  timerminute = 59;
+                  timersecond = 59;
+                }
               }
             }
           }
@@ -35,7 +37,7 @@ class _TimerClockState extends State<TimerClock> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    timerAppLogic();
+
   }
   @override
   Widget build(BuildContext context) {
@@ -164,10 +166,10 @@ class _TimerClockState extends State<TimerClock> {
                             style: ButtonStyle(
                               backgroundColor: WidgetStateProperty.all(Colors.white),),
                             onPressed: (){
-                              timerstop = false;
                               timersecond=0;
                               timerminute=0;
                               timerhour=0;
+                              timerstop = false;
                             }, child: Text(
                             'Reset',
                             style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
