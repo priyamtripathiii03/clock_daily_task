@@ -23,7 +23,7 @@ class _TimerClockState extends State<TimerClock> {
               if (timerminute > 0) {
                 timerhour--;
                 timerminute = 59;
-                timersecond = 5901;
+                timersecond = 59;
               }
             }
           }
